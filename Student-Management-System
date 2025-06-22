@@ -1,5 +1,5 @@
 import pprint
-
+ 
 student101 = {"Name":"Alice","Age":23,"dob":(16,2,2002),"Subject":{"Chemistry","Physics","EVS","EVS"}}
 student102 = {"Name":"Alexa","Age":20,"dob":(23,2,2005),"Subject":{"Maths","Chemistry","Computer science"}}
                    
