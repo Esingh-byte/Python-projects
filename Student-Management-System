@@ -1,0 +1,54 @@
+import pprint
+
+student101 = {"Name":"Alice","Age":23,"dob":(16,2,2002),"Subject":{"Chemistry","Physics","EVS","EVS"}}
+student102 = {"Name":"Alexa","Age":20,"dob":(23,2,2005),"Subject":{"Maths","Chemistry","Computer science"}}
+                   
+students = {'student1':student101,
+            'student2':student102}
+
+pprint.pprint(students)
+
+#To add a student in our students dict.
+students['student3'] = {
+    "Name":"Adam",
+    "Age":8,
+    "dob":(6,5,2017),
+    "Subject":{"Maths","Chemistry","Software Eng."}}
+
+#To desplay all student's data
+print("Displaying all students data")
+print(students)
+
+print("\n")
+#To add another subject in a requested student's subject
+a = input("Enter the student in which you want to add the subject")
+b = input("Enter the subject you want to add in the requested student's subject: ")
+
+students[a]["Subject"].add(b)
+print(f"Updated subjects for {a}: {students[a]['Subject']}")
+print(f"Updated student : {students}")
+ 
+print("\n")
+#To remove a student's subject
+n= input("Enter which students subject you want to remove:")
+print(f"\n~We are removing {n} student's subject!!~")
+
+remove_Subject = students[n].pop("Subject")
+print(f"Remove Subject :{remove_Subject}")
+print(f"updated students:{students}")
+
+print("\n")
+#To Display the requested students information
+d = input("Enter which students information you want us to display:")
+print("\n~We are displaying the students information!~")
+print(students[d])
+
+print("\n")
+#To remove a students id
+e = input("Please Tell us what students id you want us to remove :")
+print(f"\n~Now we will remove {e} students info!~")
+remove_student = students.pop(e)
+
+print(f"Students after removing {e}: {students}")
+print(f"Removed student: {remove_student}")
+
