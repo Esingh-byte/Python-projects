@@ -1,5 +1,5 @@
 a = int(input("Enter 1st number: "))
-b = int(input("Enter 2nd number: "))
+b = int(input("Enter 2nd number: ")) 
 
 ch = input("Enter any of these characters for specific operations (+, -, *, /): ")
 
